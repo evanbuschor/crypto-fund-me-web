@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid lightseagreen; */
+    outline-offset: -1px;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+}
+
+:root{
+    --color-primary: #3023CC;
+    --color-secondary: #FCC400;
+    --color-secondary-text: black;
+    --color-primary-text: white;
+}
+html{
+    height: 100vh;
+}
+
+body{
+    height: 100%;
+}
+
+#root{
+    height: 100%;
+}
+
+.app{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1 0 auto;
+    background-image: url(./assets/triangle-mosaic.png);
+}
+
+.navbar{
+    background-color: var(--color-primary);
+    display: flex;
+    height: 86px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__container{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.navbar__logo{
+    min-width: 300px;
+}
+
+.navbar__link-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 250px;
+}
+
+.navbar__link{
+    color: var(--color-primary-text)
+}
+
+.footer{
+    flex: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+}
