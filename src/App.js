@@ -1,34 +1,31 @@
-import './app.css'
-import Navbar from './Components/Navbar.js'
-import Home from './Components/Home.js'
-import heroSVG from './assets/undraw_send_gift.svg'
-import cryptoSVG from './assets/crypto.svg'
+import "./app.css";
+import Navbar from "./Components/Navbar.js";
+import Home from "./Components/Home.js";
+import Donate from "./Components/Donate";
+import NewGoal from "./Components/NewGoal";
+import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
+
 function App() {
-  return (
-    <div className="app">
-      <div className="content">
+    return (
+        <div className="app">
+            <div className="content">
+                <Navbar></Navbar>
 
-        <Navbar></Navbar>
-        <div>
-
-          <h1 className="hero__text">
-            The Selfless Donation Platform
-      </h1>
-          <button className="hero__button">
-            View Goals
-      </button>
-          <img src={heroSVG}></img>
-
-          <img src={cryptoSVG}></img>
-          <h2>Crypto Fund Me uses the public Bitcoin ledger to track anonymous funding goals. </h2>
+                <Switch>
+                    <Route path="/NewGoal">
+                        <NewGoal />
+                    </Route>{" "}
+                    <Route path="/donate">
+                        <Donate />
+                    </Route>
+                    <Route path="/">
+                        <Home />
+                    </Route>
+                </Switch>
+            </div>
+            <footer className="footer">testing</footer>
         </div>
-
-      </div>
-      <footer className="footer">
-        testing
-          </footer>
-    </div>
-  );
+    );
 }
 
 export default App;
