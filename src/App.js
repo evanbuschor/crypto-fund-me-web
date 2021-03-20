@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar.js";
 import Home from "./Components/Home.js";
 import Donate from "./Components/Donate";
 import NewGoal from "./Components/NewGoal";
-import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 function App() {
     return (
