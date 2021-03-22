@@ -10,17 +10,29 @@ const Home = () => {
     }
     return (
         <div className="home">
-            <h1 className="hero__text">The Selfless Donation Platform</h1>
-            <button className="hero__button" onClick={handleClick}>
-                View Goals
-            </button>
-            <img src={heroSVG} alt="hero banner transaction"></img>
+            <div className="hero__slogan">
+                <h1 className="hero__text">The Selfless Donation Platform</h1>
+                <button className="hero__button" onClick={handleClick}>
+                    View Goals
+                </button>
+            </div>
+            <img
+                className="hero__image"
+                src={heroSVG}
+                alt="hero banner transaction"
+            ></img>
 
-            <img src={cryptoSVG} alt="crypto token"></img>
-            <h2>
-                Crypto Fund Me uses the public Bitcoin ledger to track anonymous
-                funding goals.{" "}
-            </h2>
+            <img
+                className="under-hero__image"
+                src={cryptoSVG}
+                alt="crypto token"
+            ></img>
+            <div className="under-hero__slogan">
+                <h2 className="under-hero__text">
+                    Crypto Fund Me uses the public Bitcoin ledger to track
+                    anonymous funding goals.{" "}
+                </h2>
+            </div>
         </div>
     );
 };
