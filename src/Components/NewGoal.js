@@ -8,10 +8,9 @@ function handleSubmit(e) {
 const NewGoal = () => {
     return (
         <div>
-            new goal page
             <form onSubmit={handleSubmit}>
                 <label htmlFor="title">
-                    Title:
+                    Funding Goal Title:
                     <input id="title" type="text" />
                 </label>
                 <label htmlFor="desc">
