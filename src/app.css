@@ -114,6 +114,11 @@ body {
 .under-hero__text {
 }
 
+.goal-card {
+    outline: 1px solid var(--color-primary);
+    margin: 10px;
+}
+
 .footer {
     flex: 0;
     display: flex;
