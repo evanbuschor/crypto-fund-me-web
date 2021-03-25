@@ -111,12 +111,17 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-.under-hero__text {
-}
 
 .goal-card {
     outline: 1px solid var(--color-primary);
     margin: 10px;
+    padding: 20px;
+}
+
+.progressBar {
+    margin: 20px;
+    height: 20px;
+    width: 300px;
 }
 
 .footer {

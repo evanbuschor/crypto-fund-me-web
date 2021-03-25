@@ -9,6 +9,7 @@ const NewGoal = () => {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
+            //TODO change out the URL for a URL derived from an env variable
             await fetch(`http://localhost:3000/goals/`, {
                 method: "POST",
                 body: JSON.stringify({ title, description, addr, amount }),
