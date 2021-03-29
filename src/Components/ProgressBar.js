@@ -16,7 +16,7 @@ const Fill = styled.div`
 
 const ProgressBar = ({
     value = 50,
-    goal = 100,
+    max = 100,
     bgColor = "white",
     fgColor = "blue",
     className,
@@ -24,7 +24,7 @@ const ProgressBar = ({
     return (
         <>
             <Bar className={className}>
-                <Fill fillPercent={(value / goal) * 100}></Fill>
+                <Fill fillPercent={(value / max) * 100}></Fill>
             </Bar>
         </>
     );
