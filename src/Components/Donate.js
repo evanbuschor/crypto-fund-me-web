@@ -43,7 +43,7 @@ const Donate = () => {
                             title={title}
                             addr={bitcoinAddr}
                             desc={description}
-                            amount={goalAmount}
+                            goalAmount={goalAmount}
                             startDateUTC={postDateUTC}
                         ></GoalCard>
                     );
